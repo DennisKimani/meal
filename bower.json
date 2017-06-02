@@ -1,9 +1,9 @@
 {
-  "name": "repo",
-  "description": "views repositories",
-  "main": "index.js",
+  "name": "meal",
+  "description": "it provides a platform where the user can enter detail of what he ate during the day",
+  "main": "gulpfile.js",
   "authors": [
-    "Dennis Kimani"
+    "DennisKimani"
   ],
   "license": "ISC",
   "homepage": "",
@@ -15,8 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
     "moment": "^2.18.1"
   }
 }
