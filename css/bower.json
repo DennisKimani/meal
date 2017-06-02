@@ -1,0 +1,17 @@
+{
+  "name": "repo",
+  "authors": [
+    "DennisKimani <dennisngugi.dk@gmail.com>"
+  ],
+  "description": "views peoples repositories",
+  "main": "repo.js",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

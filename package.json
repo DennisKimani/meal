@@ -1,0 +1,35 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "views repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennisKimani/apis.git"
+  },
+  "author": "Dennis Kimani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DennisKimani/apis/issues"
+  },
+  "homepage": "https://github.com/DennisKimani/apis#readme",
+  "devDependencies": {
+    "bower-files": "^3.14.1",
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.3.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "sass": "^0.5.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
