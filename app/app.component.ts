@@ -4,15 +4,16 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
   <div class="container">
-  <form>
-Your Name: <input type="text" #newName ng-model="yourname"> Food Name: <input #newFoodName type="text" ng-model="foodname">
- Description: <input #newDescription type="text" ng-model="description"> Calories: <input #newCalories type="number" ng-model="calories">
-<button (click)=submit>Done</button>
-</form>
 
-<h4 *ngFor item in List>You entered: {{yourname}}, {{foodname}}, {{description}}, {{calories}}</h4>
+<!--MealList
+[childMealList]="masterMealList"
+(clickSender)="showDetails($event)"
+></meal-list-->
 
     <h1>Edit to Enter the meal which you ate Today!!</h1>
+    <new-form>
+    (newFoodSender)="addFood($event)"
+    </new-form>
     <div *ngFor="let currentFood of foods">
       <h3>{{ currentFood.description }}</h3>
       <button (click)="showDetails(currentFood)">Edit</button>
