@@ -6,8 +6,8 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 // used for pulling in bower files.
 var lib = require('bower-files')({
-  "overrides": {
-    "bootstrap": {
+  "overrides":{
+    "bootstrap" : {
       "main": [
         "less/bootstrap.less",
         "dist/css/bootstrap.css",
@@ -32,7 +32,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 ////////////////////// TYPESCRIPT //////////////////////
 // clean task
-gulp.task('tsClean', function() {
+gulp.task('tsClean', function(){
   return del(['app/*.js', 'app/*.js.map']);
 });
 
@@ -48,7 +48,7 @@ gulp.task('ts', ['tsClean'], shell.task([
 // run `gulp bower` to build vendor files
 // restart server.
 
-gulp.task('jsBowerClean', function() {
+gulp.task('jsBowerClean', function(){
   return del(['./build/js/vendor.min.js']);
 });
 
@@ -59,7 +59,7 @@ gulp.task('jsBower', ['jsBowerClean'], function() {
     .pipe(gulp.dest('./build/js'));
 });
 
-gulp.task('cssBowerClean', function() {
+gulp.task('cssBowerClean', function(){
   return del(['./build/css/vendor.css']);
 });
 
@@ -95,25 +95,25 @@ gulp.task('serve', ['build'], function() {
   gulp.watch(['app/*.ts'], ['tsBuild']); // typescript files change, compile then reload.
 });
 
-gulp.task('jsBuild', function() {
+gulp.task('jsBuild', function(){
   browserSync.reload();
 });
 
-gulp.task('htmlBuild', function() {
+gulp.task('htmlBuild', function(){
   browserSync.reload();
 });
 
-gulp.task('cssBuild', ['sassBuild'], function() {
+gulp.task('cssBuild', ['sassBuild'], function(){
   browserSync.reload();
 });
 
-gulp.task('tsBuild', ['ts'], function() {
+gulp.task('tsBuild', ['ts'], function(){
   browserSync.reload();
 });
 
 ////////////////////// GLOBAL BUILD TASK //////////////////////
 // global build task with individual clean tasks as dependencies.
-gulp.task('build', ['ts'], function() {
+gulp.task('build', ['ts'], function(){
   // we can use the buildProduction environment variable here later.
   gulp.start('bower');
   gulp.start('sassBuild');

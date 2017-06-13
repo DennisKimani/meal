@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent }   from './app.component';
-import { MealListComponent }   from './meal-list.component';
-import { NewFoodComponent }   from './meal-form.component'
+import { MealListComponent } from './meal-list.component';
+import { EditMealComponent } from './edit-meal.component';
+import { NewMealComponent } from './new-meal.component';
+import { CompletePipe } from './complete.pipe';
+import { MealComponent } from './meal.component';
 
 @NgModule({
   imports: [
@@ -14,7 +16,10 @@ import { NewFoodComponent }   from './meal-form.component'
   declarations: [
     AppComponent,
     MealListComponent,
-    NewFoodComponent,
+    EditMealComponent,
+    NewMealComponent,
+    CompletePipe,
+    MealComponent,
   ],
   bootstrap:    [ AppComponent ]
 })

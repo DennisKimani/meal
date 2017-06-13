@@ -1,12 +1,12 @@
 {
-  "name": "meal",
-  "description": "it provides a platform where the user can enter detail of what he ate during the day",
-  "main": "gulpfile.js",
+  "name": "ajs",
+  "description": "ajs",
+  "main": "bower install moment --save",
   "authors": [
-    "DennisKimani"
+    "npm install browser-sync --save-dev"
   ],
-  "license": "ISC",
-  "homepage": "",
+  "license": "bower install jquery --save",
+  "homepage": "bower install bootstrap --save",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,9 +14,16 @@
     "test",
     "tests"
   ],
+  "keywords": [
+    "npm",
+    "install",
+    "bower-files",
+    "--save-dev"
+  ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
     "moment": "^2.18.1"
-  }
+  },
+  "private": true
 }
