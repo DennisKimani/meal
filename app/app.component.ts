@@ -5,9 +5,11 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   template: `
 <div class="container-fluid">
+<div class="main">
 <h1>WELCOME TO MEAL RECORD.</h1>
+<h3>Welcome to the daily meal-list, please keep a record.</h3>
+</div>
   <div class ="ml col-md-6">
-    <p>Welcome to Your daily Calorie Counter<p>
     <p>Please input in a list of the meals with their calories to keep a record of them.</p>
     <meal-list
       [childMealList]="masterMealList"
