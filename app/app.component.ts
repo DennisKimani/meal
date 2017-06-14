@@ -11,6 +11,10 @@ import { Meal } from './meal.model';
 </div>
   <div class ="ml col-md-6">
     <p>Please input in a list of the meals with their calories to keep a record of them.</p>
+    <new-meal
+      (newMealSender)="addMeal($event)"
+    ></new-meal>
+    <br>
     <meal-list
       [childMealList]="masterMealList"
       (clickSender)="showDetails($event)"
@@ -21,9 +25,6 @@ import { Meal } from './meal.model';
       [childSelectedMeal]="selectedMeal"
       (doneClickedSender)="finishedEditing()"
     ></edit-meal>
-    <new-meal
-      (newMealSender)="addMeal($event)"
-    ></new-meal>
   </div>
 </div>
  `
