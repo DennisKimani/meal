@@ -10,7 +10,7 @@ import { Meal } from './meal.model';
 <h3>Welcome to the daily meal-list, please keep a record.</h3>
 </div>
   <div class ="ml col-md-6">
-    <p>Please input in a list of the meals with their calories to keep a record of them.</p>
+    <h4>Please input in a list of the meals with their calories to keep a record of them.</h4>
     <new-meal
       (newMealSender)="addMeal($event)"
     ></new-meal>
@@ -20,13 +20,14 @@ import { Meal } from './meal.model';
       (clickSender)="showDetails($event)"
     ></meal-list>
   </div>
+  <div class="pad">
   <div class="nm col-md-6">
     <edit-meal
       [childSelectedMeal]="selectedMeal"
       (doneClickedSender)="finishedEditing()"
     ></edit-meal>
   </div>
-</div>
+  </div>
  `
 })
 export class AppComponent {
