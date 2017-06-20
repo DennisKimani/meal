@@ -9,8 +9,8 @@ import { Meal } from './meal.model';
 <h1>WELCOME TO MEAL RECORD.</h1>
 <h3>Welcome to the daily meal-list, please keep a record.</h3>
 </div>
-  <div class ="ml col-md-6">
-    <h4>Please input in a list of the meals with their calories to keep a record of them.</h4>
+  <div class ="ml col-md-12">
+    <h4>Please input in a list of meals with their calories to keep a record of them.</h4>
     <new-meal
       (newMealSender)="addMeal($event)"
     ></new-meal>
@@ -19,22 +19,19 @@ import { Meal } from './meal.model';
       [childMealList]="masterMealList"
       (clickSender)="showDetails($event)"
     ></meal-list>
-  </div>
-  <div class="pad">
-  <div class="nm col-md-6">
+    <br>
     <edit-meal
       [childSelectedMeal]="selectedMeal"
       (doneClickedSender)="finishedEditing()"
     ></edit-meal>
   </div>
-  </div>
  `
 })
 export class AppComponent {
   public masterMealList: Meal[] = [
-    new Meal("Chapo with Tengu.", 200),
-    new Meal("Ugali with omena.", 400),
-    new Meal("Mchele Marahagwe.", 120),
+    new Meal("Chapo with Tengu.", 600),
+    new Meal("Ugali with omena.", 560),
+    new Meal("Mchele Marahagwe.", 220),
     new Meal("Chafua Meza.", 306),
   ];
   selectedMeal: Meal = null;
